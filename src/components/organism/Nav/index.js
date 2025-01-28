@@ -76,12 +76,12 @@ const Nav1 = () => {
           >
             Unit Services
           </a>
-          <a
-            href="#"
+          <Link
+            href="/informasipmb"
             className="hidden lg:block hover:underline hover:text-gray-600"
           >
             PMB Information
-          </a>
+          </Link>
           <Link
             href="/news"
             className="hidden lg:block hover:underline hover:text-gray-600"
