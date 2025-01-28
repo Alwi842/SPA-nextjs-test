@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 const Nav1 = () => {
   return (
     <>
@@ -30,16 +31,16 @@ const Nav1 = () => {
       </nav>
       <nav className="bg-white flex px-2 lg:px-28 pt-10 pb-10 justify-between items-center top-0">
         <div className="flex items-center">
-          <a href="#" className="sm:hidden">
+          <Link href="/index" className="sm:hidden">
             <Image
               src="/logo-mobile.png"
               alt="Mobile Logo"
               width={100}
               height={100}
             />
-          </a>
+          </Link>
 
-          <a href="#" className="hidden sm:block">
+          <Link href="/" className="hidden sm:block">
             <Image
               className="h-30 w-auto"
               src="/logoft.png"
@@ -47,16 +48,16 @@ const Nav1 = () => {
               width={200}
               height={100}
             />
-          </a>
+          </Link>
         </div>
 
         <div className="flex items-center gap-5 text-black">
-          <a
-            href="#"
+          <Link
+            href="/sejarah"
             className="hidden lg:block hover:underline hover:text-gray-600"
           >
             Faculty Profile
-          </a>
+          </Link>
           <a
             href="#"
             className="hidden lg:block hover:underline hover:text-gray-600"
@@ -81,12 +82,12 @@ const Nav1 = () => {
           >
             PMB Information
           </a>
-          <a
-            href="#"
+          <Link
+            href="/news"
             className="hidden lg:block hover:underline hover:text-gray-600"
           >
             FT News
-          </a>
+          </Link>
           <a href="#" className="hover:underline hover:text-gray-600">
             &#128269;
           </a>
